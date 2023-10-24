@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Kite - Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.2s;
+}
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(27, 27, 27);
+    z-index: -1;
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h1{
+    font-weight: lighter;
+}
+
+span{
+    color: rgb(255, 226, 99);
+}
+.info-todo span:hover{
+    color: white;
+    border-bottom: .02rem solid white;
+}
+.hr1{
+    width: 70%;
+}
+.hr2{
+    width: 70%;
+    float: right;
+}
+.title{
+    margin: 2rem;
+    color: rgb(255, 226, 99);
+}
+.logout-btn{
+    position: absolute;
+    margin: 2rem;
+    border: .02rem solid white;
+    background: none;
+    color: white;
+    padding: .5rem 1rem .5rem 1rem;
+}
+.logout-btn:hover{
+    color: rgb(255, 226, 99);
+    border: .02rem solid rgb(255, 226, 99);
+}
+
+
+/* Hero Section */
+#hero{
+    width: 100%;
+    height: 80vh;
+}
+.hero-container{
+    width: 100%;
+    height: 100%;
+}
+.hero-container img{
+    position: absolute;
+    background-position: center / cover;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+.hero-nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-nav .nav-list{
+    padding: 2rem;
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+.hero-nav .nav-list a:hover{
+    color: rgb(255, 226, 99);
+    border-bottom: .02rem solid rgb(255, 226, 99);
+}
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    /* margin-left: -20rem; */
+}
+.hero-content-wrap{
+    width: 50%;
+}
+.hero-title{
+    max-width: 10rem;
+    width: 100%;
+}
+.hero-title h1{
+    font-size: 2.5rem;
+}
+.hero-title h1:hover{
+    color: rgb(255, 226, 99);
+}
+.hero-info{
+    max-width: 40rem;
+    width: 100%;
+}
+.hero-info p{
+    font-weight: lighter;
+    font-size: .8rem;
+}
+.home-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-title h1{
+    font-size: 5rem;
+}
+.home-title p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Intro Section */
+#intro{
+    width: 100%;
+    height: 50vh;
+}
+.intro-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-wrapper{
+    width: 80%;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+.hero-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    padding: 1rem;
+    color: white;
+    border: .02rem solid white;
+    max-height: 3rem;
+    height: 100%;
+    max-width: 10rem;
+    width: 100%;
+}
+.hero-link a:hover{
+    color: rgb(255, 226, 99);
+    border: .02rem solid rgb(255, 226, 99);
+}
+
+/* Footer Section */
+#footer{
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+}
+.footer-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrapper{
+    color: white;
+    font-size: .8rem;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    </style>
+</head>
+<body>
+<!-- Hero Section -->
+    <div id="hero">
+        <div class="hero-container">
+            <img src="img/background.jpg" alt="">
+            <div class="hero-wrap">
+                <div><button class="logout-btn" type="button">Log-out</button>
+                <div class="hero-nav">
+                    <li class="nav-list"><a href="overview.html" data-after="Overview" style="color: rgb(255, 226, 99);">Overview</a></li>
+                    <li class="nav-list"><a href="todo.html" data-after="To-Do">To-Do</a></li>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-content-wrap">
+                    <div class="hero-title"><a href="todo.html"><h1>Eden Kite</h1></a></div>
+                    <div class="hero-info">
+                        <p><span>Info: </span>A company founded by the <span>Raijin Sect</span>, in order to provide jobs for countless people in need. The objective is to light the dying spark of jobless people, giving them the hope to make themselves better. <span>Eden Kite</span> introduced a <a class="info-todo" href="todo.html"><span>To-Do</span></a> Website Application for freelancers to maintain their consistency, and to become more progressive by calculating their task time and efficiency</p>
+                    </div>
+                    <div class="hero-link"><a href="todo.html">Let's get started!</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Intro Section -->
+    <div id="intro">
+        <div class="intro-container">
+            <div class="intro-wrapper">
+            <p class="intro-par"><span>Eden Kite</span> animi in aliquid omnis assumenda doloremque tempore, dignissimos ad neque, dicta consequatur soluta eius deleniti harum hic maxime esse voluptate quisquam? Veritatis reiciendis, officiis animi tenetur ut quo amet consequatur fuga at molestias tempore! Iusto, fugit eveniet? Deserunt labore provident et, illum maiores ipsa quibusdam rerum eos fugiat tenetur veniam, itaque, consectetur accusantium temporibus similique voluptas unde esse nobis! Facilis doloribus tempora reiciendis odio minima voluptate temporibus sint culpa in quos?</p>
+            <p class="intro-par"><span>Eden Kite</span> corporis, quisquam repellendus animi consequatur ipsam possimus beatae aut amet debitis nam, officia itaque ea voluptatum repellat expedita ex quae alias veniam laboriosam illum iste. Ut explicabo temporibus eos commodi quaerat maiores quos, doloremque adipisci numquam, nesciunt qui laborum totam neque, voluptate eaque rem! Velit in neque, cum dolorem atque sequi!</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer Section -->
+    <div id="footer">
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <p class="footer-content">©2023 Eden Kite. All rights reserved.</p>
+                <p class="footer-content">KodeGo Capstone.To-Do Web App</p>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
