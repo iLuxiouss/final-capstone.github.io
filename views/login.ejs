@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log in</title>
+    <link rel="stylesheet" href="style/login.css">
+    
+<script src="script/login.js" defer></script>
+</head>
+<body>
+   
+    <!-- <div class="full-page">
+       
+        <div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div> -->
+        <main class="main-content">
+            <h1>Welcome to Eden Kite</h1>
+        </main>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form action="/login" id='login' class='input-group-login' method="POST">
+                    <% if (messages.success) { %>
+                        <div class="success"><%= messages.success %></div>
+                    <% } %>
+                    <% if (messages.error) { %>
+                        <div class="error"><%= messages.error %></div>
+                    <% } %>
+                    <input name="email" type='text' class='input-field' placeholder='Email Id' required>
+                    <input name="password" type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+
+		 <form action="/register" id='register' class='input-group-register' method="POST">
+          
+		     <input id="firstname" name="firstname" type='text'class='input-field'placeholder='First Name' required>
+		     <input id="lastname" name="lastname" type='text'class='input-field'placeholder='Last Name ' required>
+		     <input id="email" name="email" type='email'class='input-field'placeholder='Email Id' required>
+		     <input id="password" name="password" type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>

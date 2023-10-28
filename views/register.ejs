@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log in</title>
+    <link rel="stylesheet" href="style/register.css">
+<script src="script/register.js" defer></script>
+</head>
+<body>
+ 
+    <div class="full-page">
+        <!-- <div class="navbar">
+            <nav>
+                
+            </nav>
+        </div> -->
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button id="btn_register" 'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                
+
+		 <form action="/register" id='register' class='input-group-register' method="POST">
+            <% if (locals.messages.error) { %>
+                <div class="error"><%= locals.messages.error %></div>
+              <% } %>
+		     <input id="firstname" name="firstname" type='text'class='input-field'placeholder='First Name' required>
+		     <input id="lastname" name="lastname" type='text'class='input-field'placeholder='Last Name ' required>
+		     <input id="email" name="email" type='email'class='input-field'placeholder='Email Id' required>
+		     <input id="password" name="password" type='password'class='input-field'placeholder='Enter Password' required>
+		     <input name="confirmpassword" type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
